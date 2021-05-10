@@ -89,7 +89,7 @@ namespace Kalkulator_ITE
                 Console.WriteLine();
             }
         }
-        private static int Nwd(int x, int y) // <---- zwraca NWD
+        public static int Nwd(int x, int y) // <---- zwraca NWD
         {
             int tempValue = Math.Max(x, y);
 

@@ -97,6 +97,7 @@ namespace Kalkulator_ITE
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(75, 23);
             this.textBox2.TabIndex = 5;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
@@ -111,6 +112,7 @@ namespace Kalkulator_ITE
             // 
             this.wynik1.Location = new System.Drawing.Point(93, 50);
             this.wynik1.Name = "wynik1";
+            this.wynik1.ReadOnly = true;
             this.wynik1.Size = new System.Drawing.Size(156, 23);
             this.wynik1.TabIndex = 3;
             this.wynik1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -123,6 +125,7 @@ namespace Kalkulator_ITE
             this.MOD_button.TabIndex = 2;
             this.MOD_button.Text = "MOD";
             this.MOD_button.UseVisualStyleBackColor = true;
+            this.MOD_button.Click += new System.EventHandler(this.MOD_button_Click);
             // 
             // NWW_button
             // 
@@ -141,6 +144,7 @@ namespace Kalkulator_ITE
             this.NWD_button.TabIndex = 0;
             this.NWD_button.Text = "NWD";
             this.NWD_button.UseVisualStyleBackColor = true;
+            this.NWD_button.Click += new System.EventHandler(this.NWD_button_Click);
             // 
             // Form1
             // 
