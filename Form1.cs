@@ -12,6 +12,8 @@ namespace Kalkulator_ITE
 {
     public partial class Form1 : Form
     {
+        public double wynik=0;
+        public int x;
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +22,16 @@ namespace Kalkulator_ITE
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            x = textBox3;
         }
     }
 }

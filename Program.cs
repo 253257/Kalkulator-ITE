@@ -92,6 +92,7 @@ namespace Kalkulator_ITE
         private static int Nwd(int x, int y) // <---- zwraca NWD
         {
             int tempValue = Math.Max(x, y);
+
             y = Math.Min(x, y);
             x = tempValue;
             while (y != 0)
