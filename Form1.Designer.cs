@@ -135,6 +135,7 @@ namespace Kalkulator_ITE
             this.NWW_button.TabIndex = 1;
             this.NWW_button.Text = "NWW";
             this.NWW_button.UseVisualStyleBackColor = true;
+            this.NWW_button.Click += new System.EventHandler(this.NWW_button_Click);
             // 
             // NWD_button
             // 

@@ -44,6 +44,11 @@ namespace Kalkulator_ITE
             wynik1.Text = (a % b).ToString();
         }
 
+        private void NWW_button_Click(object sender, EventArgs e)
+        {
+            wynik1.Text = Program.Nww(a,b).ToString();
+        }
+
         private void NWD_button_Click(object sender, EventArgs e) 
         {
             wynik1.Text = Program.Nwd(a,b).ToString();

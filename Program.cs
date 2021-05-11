@@ -103,6 +103,10 @@ namespace Kalkulator_ITE
             }
             return x;
         }
+        public static int Nww(int a, int b)
+        {
+            return a * b / Nwd(a, b);
+        }
         private static void RownanieZJednaNiewiadoma(int zmienna, int wynik) // <---- równanie z jedn¹ niewiadom¹ (zmienna * x = wynik)
         {
             int nwd = Nwd(system, zmienna);
