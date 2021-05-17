@@ -13,7 +13,6 @@ namespace Kalkulator_ITE
 
     public partial class Form1 : Form
     {
-        int a, b;
         public Form1()
         {
             InitializeComponent();
@@ -24,34 +23,27 @@ namespace Kalkulator_ITE
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            a = Convert.ToInt32(this.textBox3.Text);
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            b = Convert.ToInt32(this.textBox2.Text);
-        }
-
         private void MOD_button_Click(object sender, EventArgs e)
         {
-            wynik1.Text = (a % b).ToString();
+            if (int.TryParse(textBox3.Text, out int a))
+            {
+                if (int.TryParse(textBox2.Text, out int b))
+                    wynik1.Text = (a % b).ToString();
+                else
+                    wynik1.Text = "N/A";
+            }
+            else
+                wynik1.Text = "N/A";
         }
 
         private void NWW_button_Click(object sender, EventArgs e)
         {
-            wynik1.Text = Program.Nww(a,b).ToString();
+            //wynik1.Text = Program.Nww(a,b).ToString();
         }
 
         private void NWD_button_Click(object sender, EventArgs e) 
         {
-            wynik1.Text = Program.Nwd(a,b).ToString();
+            //wynik1.Text = Program.Nwd(a,b).ToString();
         }
     }
 }

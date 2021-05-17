@@ -48,6 +48,7 @@ namespace Kalkulator_ITE
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -61,67 +62,69 @@ namespace Kalkulator_ITE
             this.splitContainer1.Panel1.Controls.Add(this.MOD_button);
             this.splitContainer1.Panel1.Controls.Add(this.NWW_button);
             this.splitContainer1.Panel1.Controls.Add(this.NWD_button);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 266;
+            this.splitContainer1.Size = new System.Drawing.Size(914, 600);
+            this.splitContainer1.SplitterDistance = 303;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 3);
+            this.label3.Location = new System.Drawing.Point(231, 4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 15);
+            this.label3.Size = new System.Drawing.Size(18, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "b";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 3);
+            this.label2.Location = new System.Drawing.Point(141, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 15);
+            this.label2.Size = new System.Drawing.Size(17, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "a";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 20);
+            this.textBox3.Location = new System.Drawing.Point(106, 27);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(74, 23);
+            this.textBox3.Size = new System.Drawing.Size(84, 27);
             this.textBox3.TabIndex = 6;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(174, 21);
+            this.textBox2.Location = new System.Drawing.Point(199, 28);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(75, 23);
+            this.textBox2.Size = new System.Drawing.Size(85, 27);
             this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 53);
+            this.label1.Location = new System.Drawing.Point(39, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 15);
+            this.label1.Size = new System.Drawing.Size(52, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Wynik:";
             // 
             // wynik1
             // 
-            this.wynik1.Location = new System.Drawing.Point(93, 50);
+            this.wynik1.Location = new System.Drawing.Point(106, 67);
+            this.wynik1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.wynik1.Name = "wynik1";
             this.wynik1.ReadOnly = true;
-            this.wynik1.Size = new System.Drawing.Size(156, 23);
+            this.wynik1.Size = new System.Drawing.Size(178, 27);
             this.wynik1.TabIndex = 3;
-            this.wynik1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // MOD_button
             // 
-            this.MOD_button.Location = new System.Drawing.Point(174, 79);
+            this.MOD_button.Location = new System.Drawing.Point(199, 105);
+            this.MOD_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MOD_button.Name = "MOD_button";
-            this.MOD_button.Size = new System.Drawing.Size(75, 23);
+            this.MOD_button.Size = new System.Drawing.Size(86, 31);
             this.MOD_button.TabIndex = 2;
             this.MOD_button.Text = "MOD";
             this.MOD_button.UseVisualStyleBackColor = true;
@@ -129,9 +132,10 @@ namespace Kalkulator_ITE
             // 
             // NWW_button
             // 
-            this.NWW_button.Location = new System.Drawing.Point(93, 79);
+            this.NWW_button.Location = new System.Drawing.Point(106, 105);
+            this.NWW_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NWW_button.Name = "NWW_button";
-            this.NWW_button.Size = new System.Drawing.Size(75, 23);
+            this.NWW_button.Size = new System.Drawing.Size(86, 31);
             this.NWW_button.TabIndex = 1;
             this.NWW_button.Text = "NWW";
             this.NWW_button.UseVisualStyleBackColor = true;
@@ -139,9 +143,10 @@ namespace Kalkulator_ITE
             // 
             // NWD_button
             // 
-            this.NWD_button.Location = new System.Drawing.Point(12, 79);
+            this.NWD_button.Location = new System.Drawing.Point(14, 105);
+            this.NWD_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NWD_button.Name = "NWD_button";
-            this.NWD_button.Size = new System.Drawing.Size(75, 23);
+            this.NWD_button.Size = new System.Drawing.Size(86, 31);
             this.NWD_button.TabIndex = 0;
             this.NWD_button.Text = "NWD";
             this.NWD_button.UseVisualStyleBackColor = true;
@@ -149,10 +154,11 @@ namespace Kalkulator_ITE
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Kalkulator ITE";
             this.Load += new System.EventHandler(this.Form1_Load);
