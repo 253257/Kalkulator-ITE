@@ -38,12 +38,28 @@ namespace Kalkulator_ITE
 
         private void NWW_button_Click(object sender, EventArgs e)
         {
-            //wynik1.Text = Program.Nww(a,b).ToString();
+            if (int.TryParse(textBox3.Text, out int a))
+            {
+                if (int.TryParse(textBox2.Text, out int b))
+                    wynik1.Text = Program.Nww(a, b).ToString();
+                else
+                    wynik1.Text = "N/A";
+            }
+            else
+                wynik1.Text = "N/A";
         }
 
         private void NWD_button_Click(object sender, EventArgs e) 
         {
-            //wynik1.Text = Program.Nwd(a,b).ToString();
+            if (int.TryParse(textBox3.Text, out int a))
+            {
+                if (int.TryParse(textBox2.Text, out int b))
+                    wynik1.Text = Program.Nwd(a, b).ToString();
+                else
+                    wynik1.Text = "N/A";
+            }
+            else
+                wynik1.Text = "N/A";
         }
     }
 }
